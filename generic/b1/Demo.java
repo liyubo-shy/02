@@ -46,18 +46,7 @@ public class Demo {
                     return i;
                 }
 
-                int j = a1.getBirthday().getYear() - a2.getBirthday().getYear();
-                if (j != 0){
-                    return j;
-                }
-
-                int k = a1.getBirthday().getMonth() - a2.getBirthday().getMonth();
-                if (k != 0){
-                    return k;
-                }
-
-                int l = a1.getBirthday().getDay() - a2.getBirthday().getDay();
-                return l;
+                return a1.getBirthday().compareTo(a2.getBirthday());
 
             }
         });
