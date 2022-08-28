@@ -12,9 +12,14 @@ public class Thread2 {
         System.out.println("main start...");
         Thread t = new Thread(() -> {
             System.out.println("thread run...");
-            System.out.println("thread end.");
+            try {
+                Thread.sleep(200);
+            }catch (InterruptedException e){
+                e.printStackTrace();
+            }
+            System.out.println("thread end!");
         });
         t.start();
-        System.out.println("main end...");
+        System.out.println("main end!");
     }
 }
