@@ -8,24 +8,24 @@ package generic.b1;
  * @Description: 在人间已是癫，何苦要上青天，不如温柔同眠
  */
 public class Employee {
-    private int name;
+    private String name;
     private int sal;
     private MyDate birthday;
 
     public Employee() {
     }
 
-    public Employee(int name, int sal, MyDate birthday) {
+    public Employee(String name, int sal, MyDate birthday) {
         this.name = name;
         this.sal = sal;
         this.birthday = birthday;
     }
 
-    public int getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(int name) {
+    public void setName(String name) {
         this.name = name;
     }
 

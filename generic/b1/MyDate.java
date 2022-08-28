@@ -8,11 +8,11 @@ package generic.b1;
  * @Description: 在人间已是癫，何苦要上青天，不如温柔同眠
  */
 public class MyDate {
-    private String month;
-    private String day;
-    private String year;
+    private int month;
+    private int day;
+    private int year;
 
-    public MyDate(String month, String day, String year) {
+    public MyDate(int month, int day, int year) {
         this.month = month;
         this.day = day;
         this.year = year;
@@ -21,27 +21,27 @@ public class MyDate {
     public MyDate() {
     }
 
-    public String getMonth() {
+    public int getMonth() {
         return month;
     }
 
-    public void setMonth(String month) {
+    public void setMonth(int month) {
         this.month = month;
     }
 
-    public String getDay() {
+    public int getDay() {
         return day;
     }
 
-    public void setDay(String day) {
+    public void setDay(int day) {
         this.day = day;
     }
 
-    public String getYear() {
+    public int getYear() {
         return year;
     }
 
-    public void setYear(String year) {
+    public void setYear(int year) {
         this.year = year;
     }
 
