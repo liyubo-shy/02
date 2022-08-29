@@ -11,7 +11,7 @@ import java.util.*;
  */
 public class Dao <T> {
     //定义Map成员变量，String类型
-    public Map<String,T> map;
+    public Map<String,T> map =new HashMap<>();
 
     //保存
     public void save(String id, T entity){
@@ -43,6 +43,7 @@ public class Dao <T> {
             T t = map.get(key);
             list.add(t);
         }
+
 
         return list;
     }
