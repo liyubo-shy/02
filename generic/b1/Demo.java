@@ -50,7 +50,6 @@ public class Demo {
 
             }
         });
-
         for (Employee e : arr) {
             System.out.println(e);
         }
