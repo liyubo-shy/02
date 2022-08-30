@@ -1,4 +1,4 @@
-package multithread;
+package multithread.b1;
 
 /**
  * Created with IntelliJ IDEA.
