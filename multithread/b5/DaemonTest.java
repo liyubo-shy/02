@@ -15,7 +15,7 @@ public class DaemonTest {
         thread.start();
 
 
-        //循环5次后结束主线程，所有线程结束守护线程也就结束
+        //循环5次后结束主线程，所有用户线程结束守护线程也就结束
         for (int i = 0; i < 5; i++) {
             System.out.println("老师在办公室喝茶");
             Thread.sleep(1000);
