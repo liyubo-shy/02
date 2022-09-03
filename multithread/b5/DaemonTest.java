@@ -11,7 +11,7 @@ public class DaemonTest {
     public static void main(String[] args) throws InterruptedException {
         Chat chat = new Chat();
         Thread thread = new Thread(chat);
-        thread.setDaemon(true);     //设置线程为守护线程
+        thread.setDaemon(true);     //设置线程为守护线程嘻嘻
         thread.start();
 
 
