@@ -41,7 +41,7 @@ class SellTicket implements Runnable {
     public synchronized void sell() throws InterruptedException {
         /*
          * @Author: bo
-         * @Description: 使用synchronized修饰方式，让该方法同一时间只允许被一个线程访问
+         * @Description: 使用synchronized修饰方法，让该方法同一时间只允许被一个线程访问
          * @DateTime: 2022/9/4 4:06
          * @In []
          * @Return void
