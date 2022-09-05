@@ -7,7 +7,7 @@
  */
 public class Count {
     public static void main(String[] args) {
-        double a = 11459908;//available
+        double a = 11464080;//available
         double b = 16247604;//total
         System.out.println((1 - (a/b)) * 100);
     }
