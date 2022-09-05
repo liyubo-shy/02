@@ -13,24 +13,24 @@ import java.io.*;
 public class CopyImg {
     public static void main(String[] args) {
         FileInputStream fileIn = null;
-        FileOutputStream filOut = null;
+        FileOutputStream filOutImg = null;
         //定义路径
         File filePath = new File("D:\\小照片\\微信图片_20220905003714(1).png");
-        File copyPath = new File("D:\\小照片\\newImg.png");
+        File copyImgPath = new File("D:\\小照片\\newImg.png");
         //定义int计算文件大小
         int size = 0;
 
         try {
             fileIn = new FileInputStream(filePath);
-            filOut = new FileOutputStream(copyPath, true);
+            filOutImg = new FileOutputStream(copyImgPath, true);
             //定义字节数组，一次读取1024字节的数据
             byte[] buf = new byte[1024];
             //接收read方法返回的字节长度
-            int len = 0;
+            int len;
             //开始复制
             while ((len = fileIn.read(buf)) != -1) {
                 //读取到的字节数组写入新文件
-                filOut.write(buf, 0, len);
+                filOutImg.write(buf, 0, len);
                 //统计总字节长度
                 size += len;
             }
@@ -43,8 +43,8 @@ public class CopyImg {
                 if (fileIn != null) {
                     fileIn.close();
                 }
-                if (filOut != null) {
-                    filOut.close();
+                if (filOutImg != null) {
+                    filOutImg.close();
                 }
             } catch (IOException e) {
                 e.printStackTrace();
