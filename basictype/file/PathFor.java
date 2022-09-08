@@ -14,7 +14,7 @@ public class PathFor {
     public static void main(String[] args) throws IOException {
         long l1 = System.currentTimeMillis();
         ArrayList<String> list = new ArrayList<>();
-        File f = new File("G:\\");
+        File f = new File("C:\\");
 
         FileMethod.forFile(f,list);
         System.out.println("遍历完成！找到"+list.size()+"个文件");
